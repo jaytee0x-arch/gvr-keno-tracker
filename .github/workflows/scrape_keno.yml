@@ -1,9 +1,9 @@
-name: Hourly Keno Scraper
+name: Bi-Hourly Keno Scraper
 
 on:
   schedule:
-    # Runs at minute 5 past every hour (e.g., 1:05, 2:05)
-    - cron: '5 * * * *'
+   # Runs every 30 minutes (at minute 0 and 30)
+    - cron: '*/30 * * * *'
   workflow_dispatch: # Allows you to run it manually to test
 
 permissions:
